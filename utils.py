@@ -84,3 +84,24 @@ def combine_patches(patches: List[np.ndarray],
             combined_image[i:i+patch_height, j:j+patch_width, :] = patches[idx]
             idx = idx + 1
     return combined_image
+
+def concat_patches(patches:List[np.ndarray]) -> np.ndarray:
+    """
+    Concatenate a list of patch into a 2D array.
+    Each column of the 2-D array is formed by concatenating the columns of each patch.
+
+    Args:
+        patches (List[np.ndarray]): Input list of patch arrays.
+    
+    Returns:
+        np.ndarray: A 2-D array by concatenating the patches.
+    
+    Example:
+        >>> image_np = read_image(image_path)
+        >>> patches = extrat_patched(image_np)
+        >>> concatenated_patches = concat_patches(patches)
+    """
+    reshaped_patches = [np.transpose(patch, axes=(1, 0, 2)).copy().reshape(-1, 3) for patch in patches]
+    concatenated_patches = np.stack(reshaped_patches, axis=1)
+
+    return concatenated_patches
