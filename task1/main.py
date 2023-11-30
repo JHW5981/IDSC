@@ -34,7 +34,7 @@ def get_arguments():
     parser.add_argument("--log_steps", type=int, default=50, help="logging steps")
 
     # descent method
-    parser.add_argument('--descent_type_D', type=str, default='newton', choices=['gradient', 'newton'], help='descent type for D, gradient descent or Newton method')
+    parser.add_argument('--descent_type_D', type=str, default='gradient', choices=['gradient', 'newton'], help='descent type for D, gradient descent or Newton method')
 
     # step size
     parser.add_argument('--step_size_type', type=str, default='bls', choices=['fixed', 'bls'], help='step size type, bls: backtracking line search')
