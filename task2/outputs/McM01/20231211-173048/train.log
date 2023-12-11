@@ -1,0 +1,114 @@
+2023-12-11 17:30:48 | INFO | Logs are saved to outputs\McM01\20231211-173048\train.log.
+2023-12-11 17:30:48 | INFO | Configs:
+{
+    "data_path": "../images/origin/McM01.tif",
+    "output_directory": "outputs",
+    "original_img_shape": [
+        500,
+        500
+    ],
+    "img_shape": [
+        512,
+        512
+    ],
+    "patch_size": [
+        8,
+        8
+    ],
+    "patch_gap": 6,
+    "num_atoms": 128,
+    "penalty_type": "huber",
+    "huber_M": 0.5,
+    "penalty_weight": 10.0,
+    "max_iters": 800,
+    "log_steps": 10,
+    "step_size_type": "bls",
+    "adjust_gamma_factor": 0.95,
+    "adjust_gamma_steps": 1000,
+    "gamma_A": 0.0001,
+    "gamma_D": 0.001,
+    "alpha": 0.3,
+    "beta_D": 0.25,
+    "beta_A": 0.25
+}
+2023-12-11 17:31:03 | INFO | iter: 10/800, normalized error: 0.314558, gamma A: 3.906e-03, gamma D: 2.441e-04
+2023-12-11 17:31:17 | INFO | iter: 20/800, normalized error: 0.195990, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 17:31:32 | INFO | iter: 30/800, normalized error: 0.159821, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:31:49 | INFO | iter: 40/800, normalized error: 0.144486, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:32:04 | INFO | iter: 50/800, normalized error: 0.131577, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:32:20 | INFO | iter: 60/800, normalized error: 0.120439, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:32:35 | INFO | iter: 70/800, normalized error: 0.110578, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:32:50 | INFO | iter: 80/800, normalized error: 0.101786, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:33:04 | INFO | iter: 90/800, normalized error: 0.093803, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:33:18 | INFO | iter: 100/800, normalized error: 0.085151, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:33:31 | INFO | iter: 110/800, normalized error: 0.079210, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:33:44 | INFO | iter: 120/800, normalized error: 0.073522, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:33:57 | INFO | iter: 130/800, normalized error: 0.069334, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:34:11 | INFO | iter: 140/800, normalized error: 0.065523, gamma A: 2.441e-04, gamma D: 6.250e-02
+2023-12-11 17:34:25 | INFO | iter: 150/800, normalized error: 0.062238, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:34:39 | INFO | iter: 160/800, normalized error: 0.059871, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:34:55 | INFO | iter: 170/800, normalized error: 0.057458, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:35:11 | INFO | iter: 180/800, normalized error: 0.055736, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:35:24 | INFO | iter: 190/800, normalized error: 0.053858, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:35:37 | INFO | iter: 200/800, normalized error: 0.052068, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:35:50 | INFO | iter: 210/800, normalized error: 0.050983, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:36:03 | INFO | iter: 220/800, normalized error: 0.050073, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:36:16 | INFO | iter: 230/800, normalized error: 0.049471, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:36:29 | INFO | iter: 240/800, normalized error: 0.048942, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:36:42 | INFO | iter: 250/800, normalized error: 0.048579, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:36:55 | INFO | iter: 260/800, normalized error: 0.048088, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:37:09 | INFO | iter: 270/800, normalized error: 0.047746, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:37:22 | INFO | iter: 280/800, normalized error: 0.047474, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:37:35 | INFO | iter: 290/800, normalized error: 0.047205, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:37:48 | INFO | iter: 300/800, normalized error: 0.047001, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:38:01 | INFO | iter: 310/800, normalized error: 0.046860, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:38:14 | INFO | iter: 320/800, normalized error: 0.046630, gamma A: 2.441e-04, gamma D: 6.250e-02
+2023-12-11 17:38:27 | INFO | iter: 330/800, normalized error: 0.046505, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:38:41 | INFO | iter: 340/800, normalized error: 0.046397, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:38:54 | INFO | iter: 350/800, normalized error: 0.046196, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:39:07 | INFO | iter: 360/800, normalized error: 0.046042, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 17:39:20 | INFO | iter: 370/800, normalized error: 0.045959, gamma A: 2.441e-04, gamma D: 6.250e-02
+2023-12-11 17:39:33 | INFO | iter: 380/800, normalized error: 0.045893, gamma A: 2.441e-04, gamma D: 6.250e-02
+2023-12-11 17:39:46 | INFO | iter: 390/800, normalized error: 0.045826, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:39:59 | INFO | iter: 400/800, normalized error: 0.045764, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:40:12 | INFO | iter: 410/800, normalized error: 0.045700, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:40:26 | INFO | iter: 420/800, normalized error: 0.045651, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:40:39 | INFO | iter: 430/800, normalized error: 0.045617, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:40:52 | INFO | iter: 440/800, normalized error: 0.045539, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:41:05 | INFO | iter: 450/800, normalized error: 0.045468, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 17:41:18 | INFO | iter: 460/800, normalized error: 0.045441, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:41:31 | INFO | iter: 470/800, normalized error: 0.045412, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:41:44 | INFO | iter: 480/800, normalized error: 0.045386, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:41:58 | INFO | iter: 490/800, normalized error: 0.045370, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:42:12 | INFO | iter: 500/800, normalized error: 0.045359, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:42:26 | INFO | iter: 510/800, normalized error: 0.045314, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:42:40 | INFO | iter: 520/800, normalized error: 0.045319, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:42:54 | INFO | iter: 530/800, normalized error: 0.045300, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:43:08 | INFO | iter: 540/800, normalized error: 0.045284, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 17:43:21 | INFO | iter: 550/800, normalized error: 0.045251, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:43:35 | INFO | iter: 560/800, normalized error: 0.045253, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:43:49 | INFO | iter: 570/800, normalized error: 0.045233, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:44:02 | INFO | iter: 580/800, normalized error: 0.045220, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:44:16 | INFO | iter: 590/800, normalized error: 0.045215, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:44:30 | INFO | iter: 600/800, normalized error: 0.045209, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:44:44 | INFO | iter: 610/800, normalized error: 0.045201, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:44:58 | INFO | iter: 620/800, normalized error: 0.045196, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:45:12 | INFO | iter: 630/800, normalized error: 0.045186, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:45:25 | INFO | iter: 640/800, normalized error: 0.045182, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:45:38 | INFO | iter: 650/800, normalized error: 0.045177, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:45:51 | INFO | iter: 660/800, normalized error: 0.045173, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:46:05 | INFO | iter: 670/800, normalized error: 0.045168, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:46:18 | INFO | iter: 680/800, normalized error: 0.045166, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:46:31 | INFO | iter: 690/800, normalized error: 0.045163, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:46:45 | INFO | iter: 700/800, normalized error: 0.045159, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:46:59 | INFO | iter: 710/800, normalized error: 0.045156, gamma A: 2.441e-04, gamma D: 3.906e-03
+2023-12-11 17:47:12 | INFO | iter: 720/800, normalized error: 0.045154, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:47:25 | INFO | iter: 730/800, normalized error: 0.045152, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 17:47:39 | INFO | iter: 740/800, normalized error: 0.045148, gamma A: 2.441e-04, gamma D: 6.250e-02
+2023-12-11 17:47:53 | INFO | iter: 750/800, normalized error: 0.045147, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:48:07 | INFO | iter: 760/800, normalized error: 0.045146, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 17:48:20 | INFO | iter: 770/800, normalized error: 0.045145, gamma A: 9.766e-04, gamma D: 3.906e-03
+2023-12-11 17:48:33 | INFO | iter: 780/800, normalized error: 0.045144, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:48:46 | INFO | iter: 790/800, normalized error: 0.045142, gamma A: 2.441e-04, gamma D: 1.562e-02
+2023-12-11 17:48:58 | INFO | Dictionary learning done.
+2023-12-11 17:49:06 | INFO | MSE: 193.612973, PSNR: 25.261459
