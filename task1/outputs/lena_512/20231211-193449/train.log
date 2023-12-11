@@ -1,0 +1,54 @@
+2023-12-11 19:34:49 | INFO | Logs are saved to outputs\lena_512\20231211-193449\train.log.
+2023-12-11 19:34:49 | INFO | Configs:
+{
+    "data_path": "../images/gray/lena_512.png",
+    "output_directory": "outputs",
+    "original_img_shape": [
+        512,
+        512
+    ],
+    "img_shape": [
+        512,
+        512
+    ],
+    "patch_size": [
+        8,
+        8
+    ],
+    "patch_gap": 6,
+    "num_atoms": 128,
+    "penalty_type": "huber",
+    "huber_M": 0.5,
+    "penalty_weight": 10.0,
+    "max_iters": 200,
+    "log_steps": 10,
+    "step_size_type": "bls",
+    "adjust_gamma_factor": 0.95,
+    "adjust_gamma_steps": 1000,
+    "gamma_A": 0.0001,
+    "gamma_D": 0.001,
+    "alpha": 0.3,
+    "beta_D": 0.25,
+    "beta_A": 0.25
+}
+2023-12-11 19:34:56 | INFO | iter: 10/200, normalized error: 0.547559, gamma A: 1.562e-02, gamma D: 3.906e-03
+2023-12-11 19:35:02 | INFO | iter: 20/200, normalized error: 0.253231, gamma A: 1.562e-02, gamma D: 3.906e-03
+2023-12-11 19:35:10 | INFO | iter: 30/200, normalized error: 0.065254, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:35:16 | INFO | iter: 40/200, normalized error: 0.062488, gamma A: 1.562e-02, gamma D: 3.906e-03
+2023-12-11 19:35:23 | INFO | iter: 50/200, normalized error: 0.054427, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:35:30 | INFO | iter: 60/200, normalized error: 0.054559, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:35:43 | INFO | iter: 70/200, normalized error: 0.054548, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:35:50 | INFO | iter: 80/200, normalized error: 0.054491, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:35:58 | INFO | iter: 90/200, normalized error: 0.054481, gamma A: 3.906e-03, gamma D: 3.906e-03
+2023-12-11 19:36:06 | INFO | iter: 100/200, normalized error: 0.054471, gamma A: 9.766e-04, gamma D: 6.250e-02
+2023-12-11 19:36:13 | INFO | iter: 110/200, normalized error: 0.054474, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:36:20 | INFO | iter: 120/200, normalized error: 0.054472, gamma A: 1.562e-02, gamma D: 3.906e-03
+2023-12-11 19:36:27 | INFO | iter: 130/200, normalized error: 0.054473, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:36:34 | INFO | iter: 140/200, normalized error: 0.054473, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:36:40 | INFO | iter: 150/200, normalized error: 0.054473, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:36:47 | INFO | iter: 160/200, normalized error: 0.054473, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:36:54 | INFO | iter: 170/200, normalized error: 0.054473, gamma A: 9.766e-04, gamma D: 1.562e-02
+2023-12-11 19:37:01 | INFO | iter: 180/200, normalized error: 0.054473, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:37:07 | INFO | iter: 190/200, normalized error: 0.054473, gamma A: 3.906e-03, gamma D: 1.562e-02
+2023-12-11 19:37:13 | INFO | Dictionary learning done.
+2023-12-11 19:37:19 | INFO | MSE: 0.945473, PSNR: 48.374314
