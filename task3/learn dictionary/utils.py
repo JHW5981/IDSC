@@ -192,7 +192,10 @@ def save_atom_image(atom_np: np.ndarray,
     """
     patch_height, patch_width, channel, atom_num = atom_np.shape
 
-    atom_np = (atom_np - np.min(atom_np)) / (np.max(atom_np) - np.min(atom_np))
+    atom_min = np.min(atom_np.reshape(-1, channel, atom_num), axis=0)
+    atom_max = np.max(atom_np.reshape(-1, channel, atom_num), axis=0)
+
+    atom_np = (atom_np - atom_min) / (atom_max - atom_min)
 
     # get height num
     factors = []
