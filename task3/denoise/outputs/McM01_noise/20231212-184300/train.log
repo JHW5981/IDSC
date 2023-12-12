@@ -1,0 +1,84 @@
+2023-12-12 18:43:00 | INFO | Logs are saved to outputs/McM01_noise/20231212-184300/train.log.
+2023-12-12 18:43:00 | INFO | Configs:
+{
+    "data_path": "../../images/noise/McM01_noise.tif",
+    "clean_data_path": "../../images/origin/McM01.tif",
+    "atoms_path": "../learn dictionary/outputs/20231212-171659/atoms.npy",
+    "output_directory": "outputs",
+    "original_img_shape": [
+        500,
+        500
+    ],
+    "img_shape": [
+        500,
+        500
+    ],
+    "patch_size": [
+        8,
+        8
+    ],
+    "patch_gap": 4,
+    "num_atoms": 512,
+    "penalty_type": "huber",
+    "huber_M": 0.5,
+    "penalty_weight": 10.0,
+    "max_iters": 50,
+    "log_steps": 1,
+    "step_size_type": "bls",
+    "adjust_gamma_factor": 0.95,
+    "adjust_gamma_steps": 1000,
+    "gamma_A": 0.0001,
+    "alpha": 0.3,
+    "beta_A": 0.25
+}
+2023-12-12 18:43:02 | INFO | iter: 1/50, normalized error: 1.249948, gamma A: 3.906e-03
+2023-12-12 18:43:04 | INFO | iter: 2/50, normalized error: 0.932275, gamma A: 1.562e-02
+2023-12-12 18:43:06 | INFO | iter: 3/50, normalized error: 1.384336, gamma A: 1.562e-02
+2023-12-12 18:43:08 | INFO | iter: 4/50, normalized error: 0.655145, gamma A: 3.906e-03
+2023-12-12 18:43:09 | INFO | iter: 5/50, normalized error: 0.715624, gamma A: 1.562e-02
+2023-12-12 18:43:11 | INFO | iter: 6/50, normalized error: 0.567986, gamma A: 3.906e-03
+2023-12-12 18:43:12 | INFO | iter: 7/50, normalized error: 1.064674, gamma A: 6.250e-02
+2023-12-12 18:43:14 | INFO | iter: 8/50, normalized error: 0.595115, gamma A: 3.906e-03
+2023-12-12 18:43:15 | INFO | iter: 9/50, normalized error: 0.635213, gamma A: 1.562e-02
+2023-12-12 18:43:17 | INFO | iter: 10/50, normalized error: 0.533576, gamma A: 3.906e-03
+2023-12-12 18:43:18 | INFO | iter: 11/50, normalized error: 0.545702, gamma A: 1.562e-02
+2023-12-12 18:43:20 | INFO | iter: 12/50, normalized error: 0.635720, gamma A: 1.562e-02
+2023-12-12 18:43:21 | INFO | iter: 13/50, normalized error: 0.521659, gamma A: 3.906e-03
+2023-12-12 18:43:23 | INFO | iter: 14/50, normalized error: 0.547951, gamma A: 1.562e-02
+2023-12-12 18:43:24 | INFO | iter: 15/50, normalized error: 0.520912, gamma A: 3.906e-03
+2023-12-12 18:43:26 | INFO | iter: 16/50, normalized error: 0.525022, gamma A: 1.562e-02
+2023-12-12 18:43:27 | INFO | iter: 17/50, normalized error: 0.548354, gamma A: 1.562e-02
+2023-12-12 18:43:29 | INFO | iter: 18/50, normalized error: 0.522279, gamma A: 3.906e-03
+2023-12-12 18:43:30 | INFO | iter: 19/50, normalized error: 0.522089, gamma A: 1.562e-02
+2023-12-12 18:43:32 | INFO | iter: 20/50, normalized error: 0.520536, gamma A: 3.906e-03
+2023-12-12 18:43:33 | INFO | iter: 21/50, normalized error: 0.520127, gamma A: 1.562e-02
+2023-12-12 18:43:35 | INFO | iter: 22/50, normalized error: 0.520634, gamma A: 3.906e-03
+2023-12-12 18:43:36 | INFO | iter: 23/50, normalized error: 0.522414, gamma A: 6.250e-02
+2023-12-12 18:43:38 | INFO | iter: 24/50, normalized error: 0.521103, gamma A: 3.906e-03
+2023-12-12 18:43:39 | INFO | iter: 25/50, normalized error: 0.520539, gamma A: 3.906e-03
+2023-12-12 18:43:41 | INFO | iter: 26/50, normalized error: 0.521043, gamma A: 1.562e-02
+2023-12-12 18:43:42 | INFO | iter: 27/50, normalized error: 0.520682, gamma A: 3.906e-03
+2023-12-12 18:43:44 | INFO | iter: 28/50, normalized error: 0.520598, gamma A: 1.562e-02
+2023-12-12 18:43:45 | INFO | iter: 29/50, normalized error: 0.520456, gamma A: 1.562e-02
+2023-12-12 18:43:47 | INFO | iter: 30/50, normalized error: 0.520660, gamma A: 3.906e-03
+2023-12-12 18:43:48 | INFO | iter: 31/50, normalized error: 0.520422, gamma A: 1.562e-02
+2023-12-12 18:43:50 | INFO | iter: 32/50, normalized error: 0.520568, gamma A: 3.906e-03
+2023-12-12 18:43:51 | INFO | iter: 33/50, normalized error: 0.520550, gamma A: 1.562e-02
+2023-12-12 18:43:53 | INFO | iter: 34/50, normalized error: 0.520590, gamma A: 3.906e-03
+2023-12-12 18:43:54 | INFO | iter: 35/50, normalized error: 0.520539, gamma A: 1.562e-02
+2023-12-12 18:43:55 | INFO | iter: 36/50, normalized error: 0.520662, gamma A: 1.562e-02
+2023-12-12 18:43:57 | INFO | iter: 37/50, normalized error: 0.520568, gamma A: 3.906e-03
+2023-12-12 18:43:58 | INFO | iter: 38/50, normalized error: 0.520597, gamma A: 1.562e-02
+2023-12-12 18:44:00 | INFO | iter: 39/50, normalized error: 0.520564, gamma A: 3.906e-03
+2023-12-12 18:44:01 | INFO | iter: 40/50, normalized error: 0.520588, gamma A: 1.562e-02
+2023-12-12 18:44:02 | INFO | iter: 41/50, normalized error: 0.520571, gamma A: 3.906e-03
+2023-12-12 18:44:04 | INFO | iter: 42/50, normalized error: 0.520575, gamma A: 1.562e-02
+2023-12-12 18:44:05 | INFO | iter: 43/50, normalized error: 0.520569, gamma A: 3.906e-03
+2023-12-12 18:44:07 | INFO | iter: 44/50, normalized error: 0.520574, gamma A: 1.562e-02
+2023-12-12 18:44:08 | INFO | iter: 45/50, normalized error: 0.520561, gamma A: 1.562e-02
+2023-12-12 18:44:09 | INFO | iter: 46/50, normalized error: 0.520571, gamma A: 3.906e-03
+2023-12-12 18:44:11 | INFO | iter: 47/50, normalized error: 0.520567, gamma A: 1.562e-02
+2023-12-12 18:44:12 | INFO | iter: 48/50, normalized error: 0.520571, gamma A: 3.906e-03
+2023-12-12 18:44:14 | INFO | iter: 49/50, normalized error: 0.520569, gamma A: 1.562e-02
+2023-12-12 18:44:14 | INFO | Dictionary learning done.
+2023-12-12 18:44:14 | INFO | MSE: 436.883024, PSNR: 21.727152
