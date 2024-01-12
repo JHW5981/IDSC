@@ -28,7 +28,10 @@ $$
 Then, we select the eigen vectors of $XX^T$ with $K$ largest eigen values, denoted as $\tilde{U}$. Initialization is done by
 
 $$
-D_0 = \tilde{U} \\
+D_0 = \tilde{U} 
+$$
+
+$$
 A_0 = \tilde{U}^T X
 $$
 
