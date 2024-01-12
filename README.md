@@ -14,14 +14,19 @@ Python implementation of the Image Denoising via Sparse Coding Algorithm.
 ### Initialization
 
 We initialize the dictionary and coefficients by doing SVD of the patches. In other words, we utilize the principle components of the patches to initialize the dictionary.
+
 $$
 X = U\Sigma V^T
 $$
+
 Since computing $V$ takes a lot of time, we only compute $U$, which is done by doing eigen decomposition of $XX^T$.
+
 $$
 XX^T = U\Sigma^2 U^T
 $$
+
 Then, we select the eigen vectors of $XX^T$ with $K$ largest eigen values, denoted as $\tilde{U}$. Initialization is done by
+
 $$
 D_0 = \tilde{U} \\
 A_0 = \tilde{U}^T X
@@ -30,7 +35,10 @@ $$
 ### Dictionary learning
 
 $$
-\textrm{minimize}_{D, A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1  \\
+\textrm{minimize}_{D, A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1  
+$$
+
+$$
 \textrm{subject~to}~ \|d_i\|_2 = 1,~ i=1,..., K
 $$
 
@@ -63,6 +71,7 @@ python main.py --data_path "../images/McM images/McM01.tif" --num_atoms 256
 ## Task 3
 
 In task 3, we do image denoising using learned dictionaries. That is, given learned $D$,
+
 $$
 \textrm{minimize}_{A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1
 $$
