@@ -96,6 +96,7 @@ For learning dictionaries, we can treat each image individually and repeat 18 ti
 | McM04 |    30.93    |     31.84     |    29.76     |       30.85      |
 | McM05 |    31.89    |     31.04     |    29.79     |       30.91      |
 | McM06 |    32.28    |     31.73     |    31.30     |       31.77      |
+| McM07 |    31.34    |     31.42     |    30.83     |       31.20      |
 
 ### Put all images together
 On the other hand, we can also put 18 images together and implement the denoising pipeline only one time.
