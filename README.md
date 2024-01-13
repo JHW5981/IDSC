@@ -46,7 +46,7 @@ $$
 $$
 
 Note that some tricks are applied to enhance the dictionary learning result:
-- using overlapping patches
+- use overlapping patches
 - remove the DC component (mean value of patch elements) of the patches
 - make the norm of patch to be 1
 - parameter continuation is used for penalty weight $\lambda$
