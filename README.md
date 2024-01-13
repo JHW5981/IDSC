@@ -148,7 +148,7 @@ The results are below:
 
 ## Task 4
 
-In task 4, the dictionary is learned from the noisy images. We perform dictionary learning and imaging denoising in the same time. This can be performed by running the code in "task_4":
+In task 4, the dictionary is learned from the noisy images. We perform dictionary learning and image denoising in the same time. This can be performed by running the code in "task_4":
 
 ```
 cd task_4
