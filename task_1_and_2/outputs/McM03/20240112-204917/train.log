@@ -1,0 +1,35 @@
+2024-01-12 20:49:17 | INFO | Logs are saved to outputs/McM03/20240112-204917/train.log.
+2024-01-12 20:49:17 | INFO | Configs:
+{
+    "data_path": "../images/McM images/McM03.tif",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "num_atoms": 256,
+    "penalty_weight": 50.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 6500,
+    "log_steps": 500
+}
+2024-01-12 20:49:32 | INFO | iter: 500/6500, error: 13870.391350, gamma A: 1.042e-01, gamma D: 1.058e-08
+2024-01-12 20:49:46 | INFO | iter: 1000/6500, error: 10950.755398, gamma A: 8.633e-02, gamma D: 1.531e-08
+2024-01-12 20:49:59 | INFO | iter: 1500/6500, error: 8697.229191, gamma A: 7.833e-02, gamma D: 1.843e-08
+2024-01-12 20:50:11 | INFO | iter: 2000/6500, error: 7044.488712, gamma A: 7.530e-02, gamma D: 2.004e-08
+2024-01-12 20:50:25 | INFO | iter: 2500/6500, error: 5884.890735, gamma A: 7.502e-02, gamma D: 2.077e-08
+2024-01-12 20:50:40 | INFO | iter: 3000/6500, error: 5073.256845, gamma A: 7.622e-02, gamma D: 2.103e-08
+2024-01-12 20:50:53 | INFO | iter: 3500/6500, error: 4487.348495, gamma A: 7.789e-02, gamma D: 2.102e-08
+2024-01-12 20:51:07 | INFO | iter: 4000/6500, error: 4065.727725, gamma A: 7.955e-02, gamma D: 2.092e-08
+2024-01-12 20:51:22 | INFO | iter: 4500/6500, error: 3770.510254, gamma A: 8.102e-02, gamma D: 2.080e-08
+2024-01-12 20:51:34 | INFO | iter: 5000/6500, error: 3576.012641, gamma A: 8.227e-02, gamma D: 2.068e-08
+2024-01-12 20:51:47 | INFO | iter: 5500/6500, error: 3459.924998, gamma A: 8.323e-02, gamma D: 2.058e-08
+2024-01-12 20:52:02 | INFO | iter: 6000/6500, error: 3397.310660, gamma A: 8.394e-02, gamma D: 2.050e-08
+2024-01-12 20:52:16 | INFO | Dictionary learning done.
+2024-01-12 20:52:30 | INFO | MSE: 
+2024-01-12 20:52:30 | INFO | Red: 8.575945, Green: 10.308549, Blue: 12.531650
+2024-01-12 20:52:30 | INFO | Average: 10.472048
+2024-01-12 20:52:30 | INFO | PSNR: 
+2024-01-12 20:52:30 | INFO | Red: 38.797984, Green: 37.998828, Blue: 37.150721
+2024-01-12 20:52:30 | INFO | Average: 37.982511
