@@ -1,0 +1,35 @@
+2024-01-13 09:18:50 | INFO | Logs are saved to outputs/McM10/20240113-091850/train.log.
+2024-01-13 09:18:50 | INFO | Configs:
+{
+    "data_path": "../images/McM images/McM10.tif",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "num_atoms": 256,
+    "penalty_weight": 50.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 6500,
+    "log_steps": 500
+}
+2024-01-13 09:19:03 | INFO | iter: 500/6500, error: 9196.122260, gamma A: 1.031e-01, gamma D: 2.726e-08
+2024-01-13 09:19:17 | INFO | iter: 1000/6500, error: 7382.084109, gamma A: 8.559e-02, gamma D: 4.323e-08
+2024-01-13 09:19:30 | INFO | iter: 1500/6500, error: 6007.694395, gamma A: 7.720e-02, gamma D: 5.075e-08
+2024-01-13 09:19:44 | INFO | iter: 2000/6500, error: 4912.107538, gamma A: 7.284e-02, gamma D: 5.384e-08
+2024-01-13 09:19:59 | INFO | iter: 2500/6500, error: 4039.009325, gamma A: 7.065e-02, gamma D: 5.534e-08
+2024-01-13 09:20:14 | INFO | iter: 3000/6500, error: 3374.185390, gamma A: 6.996e-02, gamma D: 5.593e-08
+2024-01-13 09:20:28 | INFO | iter: 3500/6500, error: 2887.624190, gamma A: 7.017e-02, gamma D: 5.604e-08
+2024-01-13 09:20:44 | INFO | iter: 4000/6500, error: 2541.370246, gamma A: 7.097e-02, gamma D: 5.598e-08
+2024-01-13 09:21:00 | INFO | iter: 4500/6500, error: 2298.002583, gamma A: 7.207e-02, gamma D: 5.590e-08
+2024-01-13 09:21:15 | INFO | iter: 5000/6500, error: 2125.779631, gamma A: 7.330e-02, gamma D: 5.582e-08
+2024-01-13 09:21:31 | INFO | iter: 5500/6500, error: 2004.052449, gamma A: 7.449e-02, gamma D: 5.574e-08
+2024-01-13 09:21:46 | INFO | iter: 6000/6500, error: 1918.559558, gamma A: 7.555e-02, gamma D: 5.566e-08
+2024-01-13 09:22:00 | INFO | Dictionary learning done.
+2024-01-13 09:22:14 | INFO | MSE: 
+2024-01-13 09:22:14 | INFO | Red: 2.879648, Green: 3.037950, Blue: 3.746938
+2024-01-13 09:22:14 | INFO | Average: 3.221512
+2024-01-13 09:22:14 | INFO | PSNR: 
+2024-01-13 09:22:14 | INFO | Red: 43.537410, Green: 43.304997, Blue: 42.394038
+2024-01-13 09:22:14 | INFO | Average: 43.078815
