@@ -22,7 +22,7 @@ def get_arguments():
     parser.add_argument('--output_directory', default='outputs', help='directory to save outputs')
     parser.add_argument("--patch_size", default=(16, 16), help="patch size and dictionary atom size")
     parser.add_argument("--patch_gap", type=int, default=14, help="Parameter that controls the overlapping of the patches")
-    parser.add_argument("--num_atoms", type=int, default=512, help="the number of atoms")
+    parser.add_argument("--num_atoms", type=int, default=256, help="the number of atoms")
 
     # loss
     parser.add_argument("--penalty_weight", type=float, default=50.0, help="the loss weight for sparse penalty term")
