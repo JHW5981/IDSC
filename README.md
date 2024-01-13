@@ -53,6 +53,8 @@ Note that some tricks are applied to enhance the dictionary learning result:
 - soft-thresholding shrinkage for updating $A$
 - estimate Lipschitz constant to choose step size
 
+In all the tasks, we set patch size to $16\times16$, and patch gap to $14$.
+
 ## Task 1
 
 Task 1 can be performed by running the code in "task_1_and_2":
@@ -142,3 +144,35 @@ The results are below:
 | McM16 |    28.66    |     27.25     |    28.91     |       28.27      |
 | McM17 |    28.25    |     28.21     |    28.35     |       28.27      |
 | McM18 |    28.81    |     28.67     |    29.29     |       28.92      |
+
+
+## Task 4
+
+In task 4, the dictionary is learned from the noisy images. We perform dictionary learning and imaging denoising in the same time. This can be performed by running the code in "task_4":
+
+```
+cd task_4
+python main.py --data_path "../images/McM images/McM01_noise.mat" --clean_data_path "../images/McM images/McM01.tif" --num_atoms 169
+```
+
+The results are below:
+|       | Red Channel | Green Channel | Blue Channel | Average of three |
+|-------|-------------|---------------|--------------|------------------|
+| McM01 |    26.05    |     25.74     |    25.35     |       25.71      |       
+| McM02 |    27.17    |     27.40     |    26.99     |       27.19      | 
+| McM03 |    26.72    |     26.70     |    25.93     |       26.45      |
+| McM04 |    27.61    |     27.99     |    27.06     |       27.55      |
+| McM05 |    27.66    |     27.23     |    26.55     |       27.15      |
+| McM06 |    27.70    |     27.50     |    27.38     |       27.53      |
+| McM07 |    27.37    |     27.39     |    27.16     |       27.31      |
+| McM08 |    27.74    |     28.00     |    27.90     |       27.88      |
+| McM09 |    27.29    |     27.71     |    27.59     |       27.53      |
+| McM10 |    27.59    |     27.67     |    27.59     |       27.62      |
+| McM11 |    27.66    |     27.50     |    27.94     |       27.70      |
+| McM12 |    28.12    |     27.74     |    27.77     |       27.88      |
+| McM13 |    28.05    |     28.18     |    27.92     |       28.05      |
+| McM14 |    27.91    |     28.08     |    27.67     |       27.89      |
+| McM15 |    27.59    |     27.94     |    28.01     |       27.84      |
+| McM16 |    26.84    |     26.05     |    27.36     |       26.75      |
+| McM17 |    26.69    |     26.62     |    26.81     |       26.71      |
+| McM18 |    26.87    |     26.80     |    27.83     |       27.17      |
