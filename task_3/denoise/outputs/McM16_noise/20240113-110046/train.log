@@ -1,0 +1,29 @@
+2024-01-13 11:00:46 | INFO | Logs are saved to outputs/McM16_noise/20240113-110046/train.log.
+2024-01-13 11:00:46 | INFO | Configs:
+{
+    "data_path": "../../images/McM images/McM16_noise.mat",
+    "clean_data_path": "../../images/McM images/McM16.tif",
+    "atoms_path": "../../task_1_and_2/outputs/McM16/20240113-094351/atoms.npy",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "penalty_weight": 100.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 2600,
+    "log_steps": 500
+}
+2024-01-13 11:00:56 | INFO | iter: 500/2600, error: 24661.102707, gamma A: 3.906e-03
+2024-01-13 11:01:06 | INFO | iter: 1000/2600, error: 23193.928158, gamma A: 3.906e-03
+2024-01-13 11:01:16 | INFO | iter: 1500/2600, error: 21671.413869, gamma A: 3.906e-03
+2024-01-13 11:01:27 | INFO | iter: 2000/2600, error: 20323.187200, gamma A: 3.906e-03
+2024-01-13 11:01:37 | INFO | iter: 2500/2600, error: 19211.015298, gamma A: 3.906e-03
+2024-01-13 11:01:39 | INFO | Dictionary learning done.
+2024-01-13 11:01:39 | INFO | MSE: 
+2024-01-13 11:01:39 | INFO | Red: 64.066364, Green: 89.674436, Blue: 50.317772
+2024-01-13 11:01:39 | INFO | Average: 68.019524
+2024-01-13 11:01:39 | INFO | PSNR: 
+2024-01-13 11:01:39 | INFO | Red: 30.064503, Green: 28.604117, Blue: 31.113590
+2024-01-13 11:01:39 | INFO | Average: 29.927403
