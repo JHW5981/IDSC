@@ -1,0 +1,30 @@
+2024-01-13 09:16:21 | INFO | Logs are saved to outputs/cameraman_512/20240113-091621/train.log.
+2024-01-13 09:16:21 | INFO | Configs:
+{
+    "data_path": "../images/cameraman_512.png",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "num_atoms": 256,
+    "penalty_weight": 50.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 6500,
+    "log_steps": 500
+}
+2024-01-13 09:16:31 | INFO | iter: 500/6500, error: 5052.358074, gamma A: 1.095e-01, gamma D: 4.562e-08
+2024-01-13 09:16:41 | INFO | iter: 1000/6500, error: 4011.837250, gamma A: 1.001e-01, gamma D: 6.412e-08
+2024-01-13 09:16:51 | INFO | iter: 1500/6500, error: 3282.740789, gamma A: 9.744e-02, gamma D: 7.040e-08
+2024-01-13 09:17:01 | INFO | iter: 2000/6500, error: 2637.814041, gamma A: 9.621e-02, gamma D: 7.096e-08
+2024-01-13 09:17:11 | INFO | iter: 2500/6500, error: 2117.094830, gamma A: 9.577e-02, gamma D: 7.109e-08
+2024-01-13 09:17:21 | INFO | iter: 3000/6500, error: 1717.357763, gamma A: 9.590e-02, gamma D: 7.124e-08
+2024-01-13 09:17:32 | INFO | iter: 3500/6500, error: 1384.892941, gamma A: 9.624e-02, gamma D: 7.110e-08
+2024-01-13 09:17:42 | INFO | iter: 4000/6500, error: 1106.099647, gamma A: 9.666e-02, gamma D: 7.083e-08
+2024-01-13 09:17:51 | INFO | iter: 4500/6500, error: 882.228692, gamma A: 9.712e-02, gamma D: 7.057e-08
+2024-01-13 09:18:01 | INFO | iter: 5000/6500, error: 709.357161, gamma A: 9.756e-02, gamma D: 7.030e-08
+2024-01-13 09:18:10 | INFO | iter: 5500/6500, error: 578.327171, gamma A: 9.798e-02, gamma D: 7.007e-08
+2024-01-13 09:18:20 | INFO | iter: 6000/6500, error: 479.897547, gamma A: 9.834e-02, gamma D: 6.987e-08
+2024-01-13 09:18:29 | INFO | Dictionary learning done.
+2024-01-13 09:18:44 | INFO | MSE: 0.497399, PSNR: 51.163750
