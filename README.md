@@ -38,11 +38,11 @@ $$
 ### Dictionary learning
 
 $$
-\textrm{minimize}_{D, A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1  
+\textrm{min}_{D, A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1  
 $$
 
 $$
-\textrm{subject~to}~ \|d_i\|_2 = 1,~ i=1,..., K
+\textrm{s.t.} ~~ \|d_i\|_2 = 1,~ i=1,..., K
 $$
 
 Note that some tricks are applied to enhance the dictionary learning result:
@@ -76,7 +76,7 @@ python main.py --data_path "../images/McM images/McM01.tif" --num_atoms 256
 In task 3, we do image denoising using learned dictionaries. That is, given learned $D$,
 
 $$
-\textrm{minimize}_{A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1
+\textrm{min}_{A}~\frac{1}{2} \|X-DA\|_F^2 + \lambda \|A\|_1
 $$
 
 Task 3 can be performed by running the code in "task_3/denoise":
