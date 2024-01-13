@@ -1,0 +1,30 @@
+2024-01-13 09:12:12 | INFO | Logs are saved to outputs/barbara_512/20240113-091212/train.log.
+2024-01-13 09:12:12 | INFO | Configs:
+{
+    "data_path": "../images/barbara_512.png",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "num_atoms": 256,
+    "penalty_weight": 50.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 6500,
+    "log_steps": 500
+}
+2024-01-13 09:12:22 | INFO | iter: 500/6500, error: 6829.382177, gamma A: 1.033e-01, gamma D: 5.521e-08
+2024-01-13 09:12:32 | INFO | iter: 1000/6500, error: 5444.528589, gamma A: 9.066e-02, gamma D: 6.546e-08
+2024-01-13 09:12:42 | INFO | iter: 1500/6500, error: 4471.124227, gamma A: 8.672e-02, gamma D: 6.917e-08
+2024-01-13 09:12:52 | INFO | iter: 2000/6500, error: 3672.650465, gamma A: 8.618e-02, gamma D: 7.051e-08
+2024-01-13 09:13:03 | INFO | iter: 2500/6500, error: 2964.226790, gamma A: 8.689e-02, gamma D: 7.067e-08
+2024-01-13 09:13:15 | INFO | iter: 3000/6500, error: 2368.218283, gamma A: 8.782e-02, gamma D: 7.028e-08
+2024-01-13 09:13:27 | INFO | iter: 3500/6500, error: 1870.519783, gamma A: 8.884e-02, gamma D: 6.988e-08
+2024-01-13 09:13:39 | INFO | iter: 4000/6500, error: 1466.140139, gamma A: 8.981e-02, gamma D: 6.949e-08
+2024-01-13 09:13:49 | INFO | iter: 4500/6500, error: 1144.873943, gamma A: 9.073e-02, gamma D: 6.915e-08
+2024-01-13 09:14:00 | INFO | iter: 5000/6500, error: 896.247466, gamma A: 9.157e-02, gamma D: 6.889e-08
+2024-01-13 09:14:12 | INFO | iter: 5500/6500, error: 708.397476, gamma A: 9.230e-02, gamma D: 6.867e-08
+2024-01-13 09:14:24 | INFO | iter: 6000/6500, error: 568.803488, gamma A: 9.293e-02, gamma D: 6.852e-08
+2024-01-13 09:14:36 | INFO | Dictionary learning done.
+2024-01-13 09:14:54 | INFO | MSE: 0.696430, PSNR: 49.702030
