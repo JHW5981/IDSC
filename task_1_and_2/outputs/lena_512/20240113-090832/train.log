@@ -1,0 +1,30 @@
+2024-01-13 09:08:32 | INFO | Logs are saved to outputs/lena_512/20240113-090832/train.log.
+2024-01-13 09:08:32 | INFO | Configs:
+{
+    "data_path": "../images/lena_512.png",
+    "output_directory": "outputs",
+    "patch_size": [
+        16,
+        16
+    ],
+    "patch_gap": 14,
+    "num_atoms": 256,
+    "penalty_weight": 50.0,
+    "penalty_adjust_step": 500,
+    "max_iters": 6500,
+    "log_steps": 500
+}
+2024-01-13 09:08:42 | INFO | iter: 500/6500, error: 5305.975691, gamma A: 1.069e-01, gamma D: 6.482e-08
+2024-01-13 09:08:51 | INFO | iter: 1000/6500, error: 4210.210485, gamma A: 9.450e-02, gamma D: 9.007e-08
+2024-01-13 09:09:02 | INFO | iter: 1500/6500, error: 3476.732555, gamma A: 8.740e-02, gamma D: 1.030e-07
+2024-01-13 09:09:12 | INFO | iter: 2000/6500, error: 2929.110811, gamma A: 8.337e-02, gamma D: 1.093e-07
+2024-01-13 09:09:22 | INFO | iter: 2500/6500, error: 2470.442068, gamma A: 8.174e-02, gamma D: 1.120e-07
+2024-01-13 09:09:32 | INFO | iter: 3000/6500, error: 2067.839186, gamma A: 8.100e-02, gamma D: 1.135e-07
+2024-01-13 09:09:42 | INFO | iter: 3500/6500, error: 1717.985562, gamma A: 8.095e-02, gamma D: 1.142e-07
+2024-01-13 09:09:52 | INFO | iter: 4000/6500, error: 1403.022394, gamma A: 8.134e-02, gamma D: 1.146e-07
+2024-01-13 09:10:02 | INFO | iter: 4500/6500, error: 1123.314892, gamma A: 8.194e-02, gamma D: 1.147e-07
+2024-01-13 09:10:12 | INFO | iter: 5000/6500, error: 892.054356, gamma A: 8.269e-02, gamma D: 1.147e-07
+2024-01-13 09:10:22 | INFO | iter: 5500/6500, error: 709.564790, gamma A: 8.349e-02, gamma D: 1.146e-07
+2024-01-13 09:10:33 | INFO | iter: 6000/6500, error: 568.064857, gamma A: 8.428e-02, gamma D: 1.145e-07
+2024-01-13 09:10:46 | INFO | Dictionary learning done.
+2024-01-13 09:11:06 | INFO | MSE: 0.713349, PSNR: 49.597786
