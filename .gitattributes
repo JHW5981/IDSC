@@ -1,1 +1,2 @@
 task_4/outputs/McM01_noise/20240116-111545/coefficients.npy filter=lfs diff=lfs merge=lfs -text
+coefficients.npy filter=lfs diff=lfs merge=lfs -text
