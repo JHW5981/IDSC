@@ -1,0 +1,5 @@
+===========================================get our best results===========================================
+dirname             num_atoms      patch_size     patch_gap      penalty_weight best_iter      psnr           
+===========================================get our best results===========================================
+dirname             num_atoms      patch_size     patch_gap      penalty_weight best_iter      psnr           
+20240117-123230     256            [16, 16]       1              20.0           500            30.270181      
