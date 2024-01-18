@@ -53,9 +53,15 @@ Note that some tricks are applied to enhance the dictionary learning result:
 - soft-thresholding shrinkage for updating $A$
 - estimate Lipschitz constant to choose step size
 
-In all the tasks, we set patch size to $16\times16$, and patch gap to $14$.
 
 ## Task 1
+
+For optimal performance, we identified the best hyperparameters in tasks 1-3:
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp;$50$
+- max_iters  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6500$
+- patch_size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
+- patch_gap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$256$
 
 Task 1 can be performed by running the code in "task_1_and_2":
 
@@ -63,6 +69,7 @@ Task 1 can be performed by running the code in "task_1_and_2":
 cd task_1_and_2 
 python main.py --data_path "../images/lena_512.png" --num_atoms 256
 ```
+
 
 ## Task 2
 
@@ -156,11 +163,11 @@ python main.py --data_path "../images/McM images/McM01_noise.mat" --clean_data_p
 ```
 
 We conduct hyper-parameter search to find best hyper-parameters so that the highest psnr can be achieved. The reference code locates at `./task_4/hyper_search.py`. Finally, for task4 our best hyper-parameters are:
-- penalty_weight 20
-- max_iters 500/1000 (depend on different pictures)
-- patch_size (16, 16)
-- patch_gap 1
-- num_atoms 256
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp;$20$
+- max_iters  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $500/1000$ 
+- patch_size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
+- patch_gap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$256$
 
 The results are below:
 |       | Red Channel | Green Channel | Blue Channel | Average of three |
