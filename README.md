@@ -9,6 +9,43 @@ Python implementation of the Image Denoising via Sparse Coding Algorithm.
 - matplotlib
 - h5py
 
+## Code Structure
+<pre>
+├── images/  # images that we need to reconstruct and denoise
+├── task_1_and_2/  # experimental results for task1-2
+│   └── outputs/
+│       ├── McM01/20240112-203951 # best checkpoint for McM01
+│       │   ├── atoms.npy # atoms matrix we learned, i.e. D
+│       │   ├── atoms.png # visualization of atoms 
+│       │   ├── coefficients.npy # coefficients matrix we learned, i.e. A
+│       │   ├── reconstruct.npy # reconstructed image, i.e. DA
+│       │   ├── reconstruct.png # visualization of reconstructed image 
+│       │   └── train.log # training process logs
+│       ├── ...
+│       └── McM18/20240113-095254 # best checkpoint for McM18
+│   ├── main.py
+│   └── utils.py
+│
+├── task_3/  # experimental results for task3
+│   ├── learn dictionary/ # find dictionary from clean images
+│   └── denoise/ # denoising results for task3
+│       ├── outputs/...
+│       ├── main.py
+│       └── utils.py
+│
+├── task_4/  # experimental results for task4
+│   ├──outputs/...
+│   ├── hyper_search.py # search for optimal hyper-parameters
+│   ├── main.py
+│   └── utils.py
+│
+├── visualization/ # denoising visualization results
+├── .gitattributes
+├── LICENSE
+└── README.md
+</pre>
+
+
 ## Dictionary learning model
 
 ### Initialization
@@ -57,11 +94,11 @@ Note that some tricks are applied to enhance the dictionary learning result:
 ## Task 1
 
 For optimal performance, we identified the best hyperparameters in tasks 1-3:
-- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp;$50$
-- max_iters  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6500$
-- patch_size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
-- patch_gap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14$
-- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$256$
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $50$
+- max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6500$
+- patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
+- patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $256$
 
 Task 1 can be performed by running the code in "task_1_and_2":
 
@@ -163,13 +200,13 @@ python main.py --data_path "../images/McM images/McM01_noise.mat" --clean_data_p
 ```
 
 We conduct hyper-parameter search to find best hyper-parameters so that the highest psnr can be achieved. The reference code locates at `./task_4/hyper_search.py`. Finally, for task4 our best hyper-parameters are:
-- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp;$20$
-- max_iters  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $500/1000$ 
-- patch_size &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
-- patch_gap &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1$
-- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$256$
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $20$
+- max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $500/1000$ 
+- patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
+- patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $256$
 
-The results are below:
+The best results are below:
 |       | Red Channel | Green Channel | Blue Channel | Average of three |
 |-------|-------------|---------------|--------------|------------------|
 | McM01 |    28.14    |     27.58     |    27.21     |       27.64      |       
@@ -190,4 +227,3 @@ The results are below:
 | McM16 |    29.46    |     28.09     |    30.55     |       29.36      |
 | McM17 |    29.17    |     29.14     |    29.50     |       29.27      |
 | McM18 |    29.72    |     29.56     |    31.53     |       30.27      |
-
