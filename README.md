@@ -1,6 +1,10 @@
 # IDSC (Image Denoising via Sparse Coding)
 
-Python implementation of the Image Denoising via Sparse Coding Algorithm.
+Python implementation of the Image Denoising via Sparse Coding Algorithm. 
+
+<span style="color:red; font-weight:bold;font-size:24px;"> Due to the large size of the experimental results file, please visit https://github.com/sjtu-jhw/IDSC to view all our results.  </span>
+
+
 
 **Requirements:**
 - python >= 3.6
@@ -94,11 +98,11 @@ Note that some tricks are applied to enhance the dictionary learning result:
 ## Task 1
 
 For optimal performance, we identified the best hyperparameters in tasks 1-3:
-- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $50$
-- max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6500$
-- patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
-- patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14$
-- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $256$
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $70$
+- max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2000$
+- patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $8\times8$
+- patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $128$
 
 Task 1 can be performed by running the code in "task_1_and_2":
 
@@ -136,10 +140,10 @@ python main.py --data_path "../../images/McM images/McM01_noise.mat" --clean_dat
 For learning dictionaries, we can treat each image individually and repeat 18 times. The results are below:
 |       | Red Channel | Green Channel | Blue Channel | Average of three |
 |-------|-------------|---------------|--------------|------------------|
-| McM01 |    28.81    |     28.41     |    27.92     |       28.38      |       
-| McM02 |    30.75    |     31.40     |    30.53     |       30.89      | 
-| McM03 |    29.77    |     29.69     |    28.55     |       29.34      |
-| McM04 |    30.93    |     31.85     |    29.76     |       30.85      |
+| McM01 |    28.93    |     28.37     |    28.20     |       28.50      |       
+| McM02 |    30.85    |     31.47     |    30.46     |       30.93      | 
+| McM03 |    30.01    |     29.92     |    28.96     |       29.63      |
+| McM04 |    31.85    |     32.20     |    30.59     |       31.55      |
 | McM05 |    31.90    |     31.05     |    29.81     |       30.92      |
 | McM06 |    32.35    |     31.78     |    31.38     |       31.84      |
 | McM07 |    31.38    |     31.45     |    30.88     |       31.23      |
