@@ -97,28 +97,34 @@ Note that some tricks are applied to enhance the dictionary learning result:
 
 ## Task 1
 
-For optimal performance, we identified the best hyperparameters in tasks 1-3:
+For optimal performance, we identified the best hyperparameters in tasks 1:
+- penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $50$
+- max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $6500$
+- patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $16\times16$
+- patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $14$
+- num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $256$
+
+Task 1 can be performed by running the code in "task_1_and_2":
+
+```
+cd task_1_and_2 
+python main.py --data_path "../images/lena_512.png" --num_atoms 128 --patch_size 16 16 --penalty_weight 50 --max_iters 6500 --patch_gap 14
+```
+
+
+## Task 2
+For optimal performance, we identified the best hyperparameters in tasks 2-3:
 - penalty_weight &nbsp;&nbsp;&nbsp;&nbsp; $70$
 - max_iters  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2000$
 - patch_size &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $8\times8$
 - patch_gap &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $2$
 - num_atoms &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $128$
 
-Task 1 can be performed by running the code in "task_1_and_2":
-
-```
-cd task_1_and_2 
-python main.py --data_path "../images/lena_512.png" --num_atoms 256
-```
-
-
-## Task 2
-
 Task 2 can be performed by running the code in "task_1_and_2":
 
 ```
 cd task_1_and_2 
-python main.py --data_path "../images/McM images/McM01.tif" --num_atoms 256
+python main.py --data_path "../images/McM images/McM01.tif" --num_atoms 128 --patch_size 8 8 --penalty_weight 70 --max_iters 2000
 ```
 
 ## Task 3
@@ -133,7 +139,7 @@ Task 3 can be performed by running the code in "task_3/denoise":
 
 ```
 cd "task_3/denoise"
-python main.py --data_path "../../images/McM images/McM01_noise.mat" --clean_data_path "../../images/McM images/McM01.tif" --atoms_path "../../task_1_and_2/outputs/McM01/20240112-190718/atoms.npy"
+python main.py --data_path "../../images/McM images/McM01_noise.mat" --clean_data_path "../../images/McM images/McM01.tif" --atoms_path "../../task_1_and_2/outputs/McM01/20240112-190718/atoms.npy" --num_atoms 128 --patch_size 8 8 --penalty_weight 70 --max_iters 2000 --patch_gap 2s
 ```
 
 ### Treat each image individually
@@ -200,7 +206,7 @@ In task 4, the dictionary is learned from the noisy images. We perform dictionar
 
 ```
 cd task_4
-python main.py --data_path "../images/McM images/McM01_noise.mat" --clean_data_path "../images/McM images/McM01.tif" --num_atoms 169
+python main.py --data_path "../images/McM images/McM01_noise.mat" --clean_data_path "../images/McM images/McM01.tif" --num_atoms 256 --patch_size 16 16 --penalty_weight 20 --max_iters 500 --patch_gap 1
 ```
 
 We conduct hyper-parameter search to find best hyper-parameters so that the highest psnr can be achieved. The reference code locates at `./task_4/hyper_search.py`. Finally, for task4 our best hyper-parameters are:
