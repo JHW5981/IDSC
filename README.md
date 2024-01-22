@@ -241,6 +241,7 @@ The best results are below:
 
 ## Citation
 
+```
 @misc{IDSC,
   author = {Derong Yu, Huawei Ji, Yiming You, Zixi Wang, Omar Ahmed Mansour Elsayed},
   title = {IDSC:Image Denoising via Sparse Coding},
@@ -249,3 +250,4 @@ The best results are below:
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/sjtu-jhw/IDSC}},
 }
+```
