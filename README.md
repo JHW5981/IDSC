@@ -237,3 +237,15 @@ The best results are below:
 | McM16 |    29.46    |     28.09     |    30.55     |       29.36      |
 | McM17 |    29.17    |     29.14     |    29.50     |       29.27      |
 | McM18 |    29.72    |     29.56     |    31.53     |       30.27      |
+
+
+## Citation
+
+@misc{IDSC,
+  author = {Derong Yu, Huawei Ji, Yiming You, Zixi Wang, Omar Ahmed Mansour Elsayed},
+  title = {IDSC:Image Denoising via Sparse Coding},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/sjtu-jhw/IDSC}},
+}
