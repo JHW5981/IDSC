@@ -248,6 +248,6 @@ The best results are below:
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/sjtu-jhw/IDSC}},
+  howpublished = {\url{https://github.com/JHW5981/IDSC}},
 }
 ```
